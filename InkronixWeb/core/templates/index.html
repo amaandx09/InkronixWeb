@@ -1,0 +1,177 @@
+{% extends 'my_base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+ <section id="navbar" class=' bg-gradient-to-r from-neutral-900  via-slate-900 to-blue-900 border-gray-600 overflow-hidden border-b-2'>
+    {% include 'navbar.html' %}
+</section>
+
+<!-- Mobile bar -->
+<section id="mobile_navbar" class='' >
+    {% include 'mobile_bar.html' %}
+</section>  
+
+ <section id="banner" class='relative w-full h-fit' >
+    <img src="{% static 'media/banner.png' %}" alt="" srcset="" class='w-screen h-fit'>
+    <div class='absolute top-14 left-10 md:top-20 md:left-16 xl:top-40 xl:left-16 transition-all duration-700   from-blue-700 text-white wow animate__animated animate__backInLeft'>
+        <p class='transition-all duration-700 text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold '>Welcome</P> 
+        <p class='transition-all duration-700 pt-5 text-3xl md:text-5xl lg:text-6xl xl:text-7xl md:pt-10 xl:pt-16'> TO THE WORLD</p>
+        <p class='transition-all duration-700 pt-5 text-3xl md:text-5xl lg:text-6xl  xl:text-8xl md:pt-10 xl:pt-16'> OF <span class=' bg-clip-text text-4xl md:text-5xl lg:text-7xl  xl:text-8xl text-transparent bg-gradient-to-r from-blue-700 via-blue-600 to-purple-600 font-semibold'> 'INKRONIX'</s> </p>
+        <p class="transition-all duration-700 rounded-full mt-5 md:mt-10 lg:text-6xl lg:mt-16 xl:mt-20 bg-gradient-to-br from-purple-900 to-blue-600 w-fit h-fit md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-32 xl:h-32 p-3"><i class=" fa-solid text-3xl md:pl-3  md:text-5xl lg:text-7xl  xl:text-8xl fa-arrow-right  rotate-45"></i></p>
+    
+     
+    </div>
+    
+    
+
+</section> 
+<section id="3rd" class='flex lg:h-[550px;] flex-col md:flex-row bg-slate-900 shadow-2xl'>
+    <div class='wow animate__animated animate__backInLeft text-white pl-10 text-center md:text-start text-2xl lg:pl-16 lg:text-3xl pt-10 lg:w-[550px] xl:w-[850px;] transition-all duration-1000  '>
+        <h1 class='transition-all duration-1000 lg:text-4xl pt-5 bg-clip-text text-transparent bg-gradient-to-tr from-indigo-600 to-purple-600 font-semibold'>INDIA'S NO.<span class='text-3xl md:text-4xl lg:text-5xl' >1</span> INTERNSHIP AGENCY AND MUCH MORE..</h1>
+        <P class='text-white transition-all duration-1000  pt-20  font-sans'>Machine Learning</p>
+        <P class='text-white transition-all duration-1000  pt-2 font-sans'>Artificial intelligence</p>
+        <P class='text-white transition-all duration-1000  pt-2 font-sans'>Virtual Reality</p>
+        <P class='text-white transition-all duration-1000  pt-2 pb-10  font-sans'>Gaming</p>
+    </div>
+    <div class='wow animate__animated animate__backInRight flex items-center lg:items-start pb-20 px-10 md:px-5 transition-all duration-1000  md:pb-20  lg:text-end lg:pt-10'>
+        <div class='relative pt-10'>
+        <img src="{% static 'media/vr.png' %}" alt="First" class='transition-all duration-1000 shadow-lg shadow-purple-500 rounded-3xl w-2/3 md:w-2/3 lg:w-2/3 lg:h-72 xl:w-3/5 ' >
+        <img src="{% static 'media/2nd_2nd.png' %}"" alt="second" class='transition-all duration-1000 shadow-lg shadow-pink-500 absolute w-1/2 h-5/6  lg:w-3/5 xl:w-3/6 xl:h-80  top-16 left-64 lg:top-20 lg:left-48 xl:top-20 xl:left-60 md:top-20 md:left-36 rounded-3xl '>
+        </div>
+    </div>
+</section>
+
+    <div class='bg-black '>
+    <p class="wow animate__animated animate__backInUp transition-all duration-1000 text-center text-xl md:text-3xl lg:text-5xl px-10 py-10 md:px-16 lg:py-20 lg:px-20 text-white ">
+        An International Brand With World Class Technology That Offers
+    </p>
+    </div>
+
+
+<section id="5th" class='relative transition-all duration-1000 text-white bg-[#020814]'>
+    <div class="flex justify-center pt-48 transition-all duration-1000">
+    <img src="{% static 'media/ink_second.jpg' %}" alt="" srcset="" class=" h-[700px;]
+     ">
+    </div>
+    
+    <div class='wow animate__animated animate__backInLeft transition-all duration-1000 bg-gradient-to-r w xl:w-[480px;] shadow-md shadow-pink-400 from-indigo-500 via-indigo-600 to-purple-900 absolute p-3 top-5 left-16 lg:top-24 lg:left-20 xl:left-20 rounded-3xl'>
+        <p class="transition-all duration-1000 text-2xl font-semibold pb-2 pt-2 pl-5">Innovation</p>
+        <p class="transition-all duration-1000 text-lg w-[350px] pl-5">We Follow An Exquisite & Innovative Approach To Brainstorm ideas.</p>
+    </div>
+    <p class="wow animate__animated animate__backInLeft transition-all duration-1000 absolute top-12 left-[410px] lg:left-[430px] lg:top-32 xl:left-[520px]  rounded-3xl bg-cyan-400 text-2xl p-5"><i class="fa-solid fa-gear text-3xl"></i></p>
+
+    <div class='wow animate__animated animate__backInRight transition-all duration-1000 bg-gradient-to-r xl:w-[480px;] shadow-md shadow-pink-400 from-purple-900 via-indigo-600 to-indigo-600 absolute p-3 top-40 right-24 lg:top-24 lg:right-24 xl:right-32 rounded-3xl'>
+        <p class="transition-all duration-1000 text-2xl font-semibold pb-2 pt-2 pl-5">Valuable Services</p>
+        <p class="transition-all duration-1000 text-lg w-[350px] pl-5">INKRONIX Softwares Never Failed To Renovate Expertise In Tehcnologies.</p>
+    </div>
+    <p class="wow animate__animated animate__backInRight transition-all duration-1000 absolute top-48 lg:top-32 right-14 lg:right-14 xl:right-20 rounded-3xl bg-cyan-400  p-5"><i class="fa-solid fa-snowflake text-3xl"></i></p>
+     
+    <div
+        class='wow animate__animated animate__backInLeft transition-all duration-1000 bg-gradient-to-r xl:w-[400px;] shadow-md shadow-pink-400 from-indigo-500 via-indigo-600 to-purple-900 absolute p-3 top-[300px] left-16 xl:top-72 xl:left-10 rounded-3xl'>
+        <p class="transition-all duration-1000 text-2xl font-semibold pb-2 pt-2 pl-5">Reliable Support</p>
+        <p class="transition-all duration-1000 text-lg w-[350px] pl-5">We Take Dignity In Providing Maintenance & Support For Every Need.</p>
+    </div>
+    <p class="wow animate__animated animate__backInLeft transition-all duration-1000 absolute top-80 left-[400px] xl:left-[400px] rounded-3xl bg-blue-800  p-5"><i class="fa-solid fa-business-time text-3xl"></i></p>
+    
+    <div
+        class='wow animate__animated animate__backInRight transition-all duration-1000 bg-gradient-to-r xl:w-[420px] shadow-md shadow-pink-400 from-purple-900 via-indigo-600 to-indigo-600 absolute top-[440px] right-24 lg:top-[300px] lg:right-16 xl:top-72 px-3 xl:right-20 rounded-3xl'>
+        <p class="transition-all duration-1000 text-2xl font-semibold pb-2 pt-5 pl-5">Technology</p>
+        <p class="transition-all duration-1000 text-lg w-[350px] pb-2 pl-5">INKRONIX Softwares Never Failed To Renovate Expertise In Tehcnologies.</p>
+    </div>
+    <p class="wow animate__animated animate__backInRight transition-all duration-1000 absolute top-[465px] right-12 lg:right-4 lg:top-80 xl:right-12 rounded-3xl bg-blue-800   p-5"><i class="fa-solid fa-handshake-slash text-3xl"></i></p>
+
+</section>
+
+<section id="6th" class='bg-black text-white p-5 relative'>
+    <p class='text-center text-4xl md:p-5 mt-16 wow animate__animated animate__backInUp'>Our Best Services <i class="fa-solid fa-play text-2xl pl-2 mt-2 text-red-700"></i></p>
+    <div class="transition-all duration-1000 grid lg:grid-cols-3 lg:px-36 md:grid-cols-2 grid-cols-1  pt-10 text-2xl  gap-5 lg:gap-3 pb-10 xl:mb-20 lg:mb-16">
+        <p class='wow animate__animated animate__backInLeft transition-all duration-1000 rounded-3xl  text-center lg:px-10 xl:px-32 py-10 shadow-[inset_1px_1px_22px_1px_rgba(0,0,0,0.3)]  shadow-blue-400'>App\Web Development</p>
+        <p class='wow animate__animated animate__backInDown transition-all duration-1000 rounded-3xl text-center  lg:px-10 xl:px-32 py-10 shadow-[inset_1px_1px_22px_1px_rgba(0,0,0,0.3)] shadow-blue-400 '>Digital Marketing</p>
+        <p class='wow animate__animated animate__backInRight transition-all duration-1000 rounded-3xl text-center  lg:px-10 xl:px-32 py-10 shadow-[inset_1px_1px_22px_1px_rgba(0,0,0,0.3)] shadow-blue-400 '>Digital Marketing</p>        
+        <p class='wow animate__animated animate__backInUp transition-all duration-1000 lg:col-start-2  rounded-3xl text-center text-2xl p-2 lg:px-16 xl:px-32 lg:mt-5 py-10 shadow-[inset_1px_1px_22px_1px_rgba(0,0,0,0.3)]  shadow-blue-400'>Virtual Reality </p>
+    
+    </div>
+    
+    <!--  round circle -->
+    <p class="wow animate__animated animate__backInUp transition-all duration-1000 w-12 h-12 absolute shadow-[inset_1px_1px_20px_1px_rgba(0,0,0,0.3)]  shadow-blue-400 top-5 left-16 lg:top-60 lg:left-20 rounded-full "></p>
+    <p class="wow animate__animated animate__backInDown transition-all duration-1000 w-20 h-20 absolute shadow-[inset_2px_2px_30px_2px_rgba(0,0,0,0.3)]  shadow-blue-400 top-16 lg:top-72 rounded-full "></p>
+    <p class="wow animate__animated animate__backInDown w-12 h-12 absolute shadow-[inset_1px_1px_20px_1px_rgba(0,0,0,0.3)]  shadow-blue-400 -bottom-16 right-40 rounded-full "></p>
+    <p class="wow animate__animated animate__backInDown w-20 h-20 absolute shadow-[inset_2px_2px_30px_2px_rgba(0,0,0,0.3)]  shadow-blue-400 -bottom-10 right-20 rounded-full "></p>
+</section>
+
+<section id="7th" class=' bg-[#0d1328] '>
+    
+    <p class='wow animate__animated animate__backInLeft transition-all duration-1000 text-white m-auto text-xl md:text-2xl lg:text-4xl px-10 md:px-16 lg:px-24 text-justify pt-20 '>
+        <span class='text-purple-600 lg:text-4xl font-semibold'>INKRONIX SOFTWARES PRIVATE LIMITED </span> is an Indian multinational information technology company that provides Business Consulting, Information Technology, Outsourcing Services, Mobile Application Developement and Websites Creations Etc.
+    </p>
+    
+    
+    <p class='wow animate__animated animate__backInRight text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-cyan-600 font-semibold pt-16 text-4xl'>OUR PURPOSE</p>
+    <p class=' wow animate__animated animate__backInLeft transition-all duration-1000 text-white text-center mt-14 px-10 text-xl md:text-2xl lg:text-4xl'>
+        TO AMPLIFY HUMAN POTENTIAL AND CREATE THE NEXT OPPORTUNITY FOR PEOPLE, BUSINESSES AND COMMUNITES.
+    </p>
+    <div class=" relative">
+        <img src="{% static 'media/PhotoRoom.png' %}" alt="" srcset="" class='h-fit w-screen'>
+        <p class="wow animate__animated animate__backInUp transition-all duration-1000 absolute bottom-28 left-14 md:bottom-44 md:left-24 lg:bottom-72 lg:left-28  md:text-3xl lg:text-5xl p-3 md:p-5 lg:p-8 rounded-[40px;] bg-gradient-to-r from-purple-900  to-blue-700 text-white shadow-md shadow-pink-300  ">HIRE US <span><i class="fa-solid fa-arrow-right px-2 font-semibold -rotate-45"></i></span> </p>
+    </div>
+</section>
+
+<section id="8th" class='flex relative flex-col items-center justify-center pt-5 h-fit bg-slate-900 overflow-hidden '>
+    <p class='wow animate__animated animate__backInLeft transition-all duration-1000 text-3xl md:text-5xl lg:text-7xl bg-clip-text text-transparent bg-gradient-to-tr from-purple-500 to-blue-600  font-semibold pt-10 '>OR</p>
+    <P class='wow animate__animated animate__backInRight transition-all duration-1000 text-xl md:text-2xl lg:text-5xl text-white mt-5 md:mt-8 lg:mt-16'>JOIN THE REVOLUTION & BE A PART OF</P>
+    <P class='wow animate__animated animate__backInLeft text-3xl md:text-5xl lg:text-6xl xl:text-7xl transition-all duration-1000 font-semibold m-10 md:mx-14 lg:m-24 border border-t-purple-400 border-l-blue-500 border-r-purple-400 border-b-blue-500 bg-clip-text text-transparent bg-gradient-to-r shadow-md p-5 from-indigo-500 via-indigo-600 px-10  to-pink-900 rounded-[45px] '>INKRONIX</P>
+    <p class="w-56 h-56 rounded-full  bg-indigo-900 top-auto -left-48 md:-left-36 lg:-left-24 blur-[60px] absolute "></p>
+    <p class="w-56 h-56 rounded-full bg-indigo-900 top-auto -right-48 md:-right-36 lg:-right-24 blur-[60px] absolute "></p>
+    <p class="w-[600px] h-10 rounded-full  bg-indigo-900 top-44 left-52 blur-[60px] absolute "></p>
+    <p class="w-[300px] h-10 rounded-full  bg-indigo-900 top-44 right-60 blur-[60px] absolute "></p>
+</section>
+
+<section id="footer" class='bg-gray-800 transition-all duration-1000' >
+    
+    {% include 'footer.html' %}
+     
+</section>
+
+
+
+{% endblock content %}
+
+{% block js %}
+    <script>
+        var flag=true
+        function formOpen(){
+            form = document.getElementById('form')
+            if (flag){
+                
+            form.classList.replace("-right-full",'-right-10');
+            flag=false;
+            }
+            else{
+                form.classList.replace('-right-10', "-right-full");
+                flag=true;
+            }
+        }
+        var mobile_flag=true
+        function mobileBarOpen(){
+            form = document.getElementById('mobile_bar_open')
+            if (mobile_flag){
+                
+            form.classList.replace("h-0",'h-52');
+            mobile_flag=false;
+            }
+            else{
+                form.classList.replace('h-52',"h-0");
+                mobile_flag=true;
+            }
+        }
+
+      
+        {% if messages %}
+            {% for message in messages %}
+                swal("Successfully!", "{{ message }}", "success");
+            {% endfor %}
+        {% endif %}
+        
+    </script>
+
+{% endblock js %}
