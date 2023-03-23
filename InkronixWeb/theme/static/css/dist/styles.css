@@ -2142,8 +2142,38 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.hover\:from-purple-500:hover {
+  --tw-gradient-from: #a855f7;
+  --tw-gradient-to: rgb(168 85 247 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:from-orange-800:hover {
+  --tw-gradient-from: #9a3412;
+  --tw-gradient-to: rgb(154 52 18 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:from-cyan-400:hover {
+  --tw-gradient-from: #22d3ee;
+  --tw-gradient-to: rgb(34 211 238 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .hover\:to-pink-600:hover {
   --tw-gradient-to: #db2777;
+}
+
+.hover\:to-indigo-700:hover {
+  --tw-gradient-to: #4338ca;
+}
+
+.hover\:to-indigo-600:hover {
+  --tw-gradient-to: #4f46e5;
+}
+
+.hover\:to-pink-500:hover {
+  --tw-gradient-to: #ec4899;
 }
 
 .hover\:text-2xl:hover {
