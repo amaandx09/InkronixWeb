@@ -1,21 +1,21 @@
-<div class="block md:hidden relative ">
+{% load static %}
+<div class="block md:hidden relative transition-all duration-1000 ">
         <div class="flex text-white justify-between px-5 py-3 items-center {% if home %}bg-gradient-to-r from-neutral-900  via-slate-900 to-blue-900 {% endif %} border-gray-600 overflow-hidden border-b-2 {% if team %} bg-[#1a0504] {% endif %} {% if we_do %}bg-gradient-to-r from-[#021117] via-[#0a4759] to-[#074454]{% endif %} ">
-            <div class=' flex justify-between items-center gap-2 '>
-                <img src="" alt="Logo">
-                <p class='text-2xl text-white'>INKRONIX</p>
-            </div>
-    
             <p  onclick="mobileBarOpen();" class='text-4xl  cursor-pointer'><i class="hover:text-gray-400 fa-solid fa-bars-staggered "></i></p>
+            <div class=' flex justify-between items-center gap-2 '>
+                <img src="{% static 'media/logo.png' %}" alt="Logo" class='h-10 transition-all duration-1000'>
+                <p class='text-3xl font-semibold text-white'>INKRONIX</p>
+            </div>
+            <p onclick='formOpen();' id='form_btn'
+                class='border px-6 py-2  transition-all  bg-gradient-to-tr duration-200 {% if home %} hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800 {% endif %} {% if we_do %}  hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800  {% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600  shadow-lg shadow-indigo-800 border-b-blue-700  font-semibold rounded-full  cursor-pointer text-white'>
+                Let's talk</p>    
+            
         </div>
         <div  class=" text-gray-300 ">
             <div id="mobile_bar_open" class="absolute z-10 transition-all duration-200 h-0 overflow-hidden flex flex-col justify-center items-center w-full space-y-5 bg-gradient-to-r {% if home %} from-neutral-900  via-slate-900 to-blue-900 {% endif %} {% if team %} bg-[#1a0504] {% endif %}{% if we_do %}bg-gradient-to-r from-[#021117] via-[#0a4759] to-[#074454]{% endif %}  opacity-90 ">
                 <a href="{% url 'home' %}" class=' font-thin {% if home %} text-pink-600{% endif %} hover:text-white'>Home</a>
                 <a href='{% url 'team' %}' class=' font-thin hover:text-white {% if team %} text-pink-600{% endif %} '>Team</a>
                 <a href="{% url 'we_do' %}" class=' font-thin hover:text-white {% if we_do %} text-pink-600{% endif %}'>What we do</a>
-            
-            <p onclick='formOpen();' id='form_btn'
-                class='border px-6 py-2  transition-all  bg-gradient-to-tr duration-200 {% if home %} hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800 {% endif %} {% if we_do %}  hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800  {% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600  shadow-lg shadow-indigo-800 border-b-blue-700  font-semibold rounded-full  cursor-pointer text-white'>
-                Let's talk</p>
             </div>
         </div>
     </div>

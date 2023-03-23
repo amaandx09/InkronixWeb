@@ -1,0 +1,16 @@
+<div id='form' class="border fixed transition-all duration-150 -top-10 z-20 -right-full m-10 rounded-3xl bg-slate-50 text-black w-[490px] h-screen md:w-2/3 lg:w-2/3 xl:w-1/2 md:h-[650px;]">
+    <p class='text-end pr-10 pt-5 text-xl cursor-pointer hover:text-2xl group' onclick='formOpen();'>Close <i class="group-hover:text-2xl transition-all duration-150 fa-sharp fa-solid fa-xmark"></i></p>
+    <p class='-rotate-90 p-4 absolute top-64 -left-12 md:-left-16 font-semibold font-serif text-2xl md:text-3xl lg:text-5xl '>ENQUIRY</p>
+<div class="flex flex-col w-4/5 lg:w-3/4 md:w-fit top-24 left-16 md:top-20 md:left-16 lg:left-32 rounded-3xl shadow-md shadow-purple-400 font-semibold p-7 md:mr-4 absolute bg-gray-200 text-black">
+        <p class='mt-2 text-2xl font-serif'>Got The Idea? We've Got The Skills! Let's Team Up</p>
+        <p class='text-gray-500 font-semibold text-sm mt-5'>Tell Us More about yourself & what you've got in your mind</p>
+        <form action="" method="post" class='flex flex-col'>
+                {% csrf_token %}
+                <input type="text" required   name="name" id="name" placeholder='Your Name' class='focus:border-black mt-5 bg-gray-200 focus:ring-0 border-x-0 border-t-0 border-2'>
+                <input type="text" pattern="[0-9]{10}"  required  name="phone" id="phone" placeholder='Your Phone' class='mt-5 border-x-0 border-t-0 focus:ring-0 border-2 bg-gray-200'>
+                <input type="text" name="project" id="" required placeholder ='Tell us little bit about your project' class='mt-5 border-x-0 border-t-0 border-2 focus:ring-0 bg-gray-200'>
+                <p class='mt-5'></p>
+                <button type="submit" class='bg-gradient-to-tr transition-all duration-500 hover:from-white hover:to-pink-600  from-sky-400 to-purple-500 shadow-md shadow-purple-500 text-white p-2 border-x-0 border-t-0 rounded-lg mt-2'>Send message</button>
+            </form>
+    </div>
+</div>

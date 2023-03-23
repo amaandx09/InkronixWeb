@@ -7,7 +7,7 @@ class Home(View):
     
     def get(self,request):
         
-        return render(request,'index.html',{'home':True})
+        return render(request,'home.html',{'home':True})
 
     def post(self,request):
         name = request.POST['name']
