@@ -6,9 +6,7 @@
                 <img src="{% static 'media/logo.png' %}" alt="Logo" class='h-10 transition-all duration-1000'>
                 <p class='text-3xl font-semibold text-white'>INKRONIX</p>
             </div>
-            <p onclick='formOpen();' id='form_btn'
-                class='border px-6 py-2  transition-all  bg-gradient-to-tr duration-200 {% if home %} hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800 {% endif %} {% if we_do %}  hover:text-black hover:from-white hover:to-pink-600 from-blue-900 to-purple-800  {% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600  shadow-lg shadow-indigo-800 border-b-blue-700  font-semibold rounded-full  cursor-pointer text-white'>
-                Let's talk</p>    
+            <p onclick='formOpen();' id='form_btn' class='border px-6 py-2 hover:bg-cyan-700 transition-all duration-150 bg-gradient-to-tr {% if team %}hover:from-orange-800  hover:to-pink-500  {% endif %} {% if we_do %} hover:from-cyan-400  hover:to-pink-500  {% endif %}  {% if home %} from-blue-900 to-purple-800 hover:from-purple-500  hover:to-indigo-700{% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600 mr-9 shadow-lg shadow-indigo-800 border-b-blue-700 font-semibold rounded-full  cursor-pointer text-white  hover:text-black '>Let's talk</p>
             
         </div>
         <div  class=" text-gray-300 ">
