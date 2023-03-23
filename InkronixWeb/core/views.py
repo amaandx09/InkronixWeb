@@ -41,3 +41,7 @@ class WhatWeDo(View):
         print("name:",name,"Phone:",phone)
         messages.success(request,f"Hello, {name} Thanks for contacting us! We will reach you soon!!")
         return HttpResponseRedirect('/')
+    
+
+
+    
