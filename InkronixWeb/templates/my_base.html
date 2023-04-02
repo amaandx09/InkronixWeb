@@ -26,14 +26,14 @@
 
 
 		 <script>
-			document.addEventListener('DOMContentLoaded', function(){
+			{% comment %} document.addEventListener('DOMContentLoaded', function(){
 				
 				new WOW().init();
-			})
+			}) {% endcomment %}
               
               </script>
 		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-		<script src="{% static 'js/wow.min.js' %}"></script>
+		{% comment %} <script src="{% static 'js/wow.min.js' %}"></script> {% endcomment %}
               
 		{% block js %}{% endblock js %}
 	</body>

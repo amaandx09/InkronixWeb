@@ -2,7 +2,9 @@
 <div class="hidden md:flex justify-between p-3 relative overflow-hidden transition-all duration-1000">
         <div class=' flex justify-between items-center gap-2'>
             <img src="{% static 'media/logo.png' %}" alt="Logo" class='transition-all duration-1000 h-10 ml-10 lg:ml-16'>
-            <p class='transition-all duration-1000 text-3xl lg:text-4xl text-white font-semibold'>INKRONIX</p>
+            <a href="{% url 'admin_login' %}">
+                <p class='transition-all duration-1000 text-3xl lg:text-4xl text-white font-semibold'>INKRONIX</p>
+            </a>
         </div>
         <div class='flex justify-between items-center  gap-8 text-gray-300 '>
             <a href="{% url 'home' %}" class=' font-thin {% if home %} text-pink-600{% endif %} hover:text-white'>Home</a>

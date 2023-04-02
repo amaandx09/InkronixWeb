@@ -1,6 +1,7 @@
 from django.shortcuts import render,HttpResponseRedirect, HttpResponse
 from django.views import View
 from django.contrib import messages
+from .models import *
 # Create your views here.
 
 class Home(View):
@@ -11,8 +12,10 @@ class Home(View):
 
     def post(self,request):
         name = request.POST['name']
+        email = request.POST['email']
         phone = request.POST['phone']
-        print("name:",name,"Phone:",phone)
+        details = request.POST['details']
+        Project(name=name,email=email,phone=phone,details=details).save()
         messages.success(request,f"Hello, {name} Thanks for contacting us! We will reach you soon!!")
         return HttpResponseRedirect('/')
     
@@ -23,10 +26,8 @@ class Team(View):
         return render(request,'team.html',{'team':True})
 
     def post(self,request):
-        name = request.POST['name']
-        phone = request.POST['phone']
-        print("name:",name,"Phone:",phone)
-        messages.success(request,f"Hello, {name} Thanks for contacting us! We will reach you soon!!")
+        
+        
         return HttpResponseRedirect('/')
     
 class WhatWeDo(View):
@@ -36,11 +37,16 @@ class WhatWeDo(View):
         return render(request,'we_do.html',{'we_do':True})
 
     def post(self,request):
-        name = request.POST['name']
-        phone = request.POST['phone']
-        print("name:",name,"Phone:",phone)
-        messages.success(request,f"Hello, {name} Thanks for contacting us! We will reach you soon!!")
+        
+        
         return HttpResponseRedirect('/')
+    
+class AdminLogin(View):
+    
+    def get(self,request):
+        
+        return HttpResponseRedirect('/admin/')
+
     
 
 
