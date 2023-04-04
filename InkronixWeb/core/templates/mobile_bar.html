@@ -1,17 +1,16 @@
 {% load static %}
-<div class="block md:hidden relative transition-all duration-1000 ">
-        <div class="flex text-white justify-between py-1 w-screen  items-center {% if home %}bg-gradient-to-r from-neutral-900  via-slate-900 to-blue-900 {% endif %} border-gray-600 overflow-hidden border-b-2 {% if team %} bg-[#1a0504] {% endif %} {% if we_do %}bg-gradient-to-r from-[#021117] via-[#0a4759] to-[#074454]{% endif %} ">
+<div class="block md:hidden relative transition-all duration-1000  ">
+        <div class=" flex text-white justify-between py-1  items-center {% if home %}bg-gradient-to-r from-neutral-900  via-slate-900 to-blue-900 {% endif %} border-gray-600 overflow-hidden border-b-2 {% if team %} bg-[#1a0504] {% endif %} {% if we_do %}bg-gradient-to-r from-[#021117] via-[#0a4759] to-[#074454]{% endif %} ">
             <div>
-                <p  onclick="mobileBarOpen();" class='text-xl pl-2 sm:text-3xl  cursor-pointer'><i class="hover:text-gray-400 fa-solid fa-bars-staggered "></i></p>
+                <p  onclick="mobileBarOpen();" class='wow animate__animated animate__bounceInLeft text-xl pl-2 sm:text-3xl  cursor-pointer'><i class="hover:text-gray-400 fa-solid fa-bars-staggered "></i></p>
             </div>
-            <div class=' flex justify-start items-center  gap-1 sm:gap-2 '>
-                <img src="{% static 'media/logo.png' %}" alt="Logo" class='h-5 sm:h-10 transition-all duration-1000'>
-                <a href="{% url 'admin_login' %}"><p class='text-xl sm:text-2xl font-semibold text-white'>INKRONIX</p></a>
+            <div class=' wow animate__animated animate__bounceInLeft flex justify-start items-center  gap-1 sm:gap-2 '>
+                <img src="{% static 'media/logo.png' %}" alt="Logo" class='h-5  transition-all duration-1000'>
+                <a href="{% url 'admin_login' %}"><p class='text-sm font-semibold text-white'>INKRONIX</p></a>
             </div>
             
-            <div class='text-end'>
-                <p onclick='formOpen();' id='form_btn' class=' sm:px-6 text-sm px-3 py-2 hover:bg-cyan-700 transition-all duration-150 bg-gradient-to-tr {% if team %}hover:from-orange-800  hover:to-pink-500  {% endif %} {% if we_do %} hover:from-cyan-400  hover:to-pink-500  {% endif %}  {% if home %} from-blue-900 to-purple-800 hover:from-purple-500  hover:to-indigo-700{% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600 mr-9 shadow-lg shadow-blue-400 border-b-blue-700 font-semibold rounded-full  cursor-pointer text-white  hover:text-black '>Let's talk</p>
-            </div>
+            
+                <p onclick='formOpen();' id='form_btn' class='wow animate__animated animate__bounceInRight border text-sm px-5 py-2 hover:bg-cyan-700 transition-all duration-150 bg-gradient-to-tr {% if team %}hover:from-orange-800  hover:to-pink-500  {% endif %} {% if we_do %} hover:from-cyan-400  hover:to-pink-500  {% endif %}  {% if home %} from-blue-900 to-purple-800 hover:from-purple-500  hover:to-indigo-700{% endif %} border-t-purple-600 border-l-blue-600 border-r-blue-600 mr-2 shadow-lg shadow-indigo-800 border-b-blue-700 font-semibold rounded-full  cursor-pointer text-white  hover:text-black '>Let's talk</p>
             
             
         </div>
