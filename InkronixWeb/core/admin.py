@@ -4,4 +4,4 @@ from .models import *
 
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ['id','name','email','phone','details']
+    list_display = ['id','date_time','name','email','phone','details','interest','calling']
